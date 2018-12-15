@@ -1,0 +1,21 @@
+<html>
+
+<head>
+<style>
+    #ellie {
+        color: purple;
+        font-size: 3rem;
+    }
+</style>
+<script src="system.js"></script>
+</head>
+<body>
+    <div id='liam'></div>
+    <div id='ellie'></div>
+    <script>
+        console.log(System.import('http://localhost:8080/iife.js'));
+        var revealing = System.import('http://localhost:8080/revealing.js')
+        console.log("REVEALING: ", revealing.(function(val){return val}));
+    </script>
+</body>
+</html>
