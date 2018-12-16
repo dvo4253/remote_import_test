@@ -4,12 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "webpack": "webpack --config webpack/webpack.dev.babel.js",
+    "start": "npm run webpack && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "systemjs": "^2.1.1"
+    "single-spa": "^4.0.1",
+    "systemjs": "^2.1.1",
+    "webpack": "^4.27.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^1.0.0",
+    "webpack-cli": "^3.1.2"
   }
 }

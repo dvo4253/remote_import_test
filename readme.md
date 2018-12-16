@@ -1,0 +1,1 @@
+# A few apps to test out exporting and dynamically reimport apps on the fly with systemjs. A couple tests for webpack exports and then a react app test.

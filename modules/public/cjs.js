@@ -1,7 +1,10 @@
 
-function testCJS() {
-    return 'THIS IS A TEST CJS MODULE';
-}
 
 
-module.exports = {testCJS};
+//    methods
+function myFunc(){
+    console.log("HELLO from CSJ");
+};
+
+//    exposed public method (single)
+module.exports = myFunc;

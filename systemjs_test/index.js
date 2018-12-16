@@ -4,9 +4,9 @@ const express = require('express');
 
 const app = express();
 
-const port = 3000
+const port = 3001
 
-app.use(express.static('public'))
+app.use(express.static('dist/'))
 
 
 app.get('/', function(req, res) { return res.sendFile(__dirname + '/index.html')});

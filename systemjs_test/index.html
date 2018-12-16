@@ -7,15 +7,48 @@
         font-size: 3rem;
     }
 </style>
-<script src="system.js"></script>
+
+<script src="public/assets/system.js"></script>
+<!-- <script src="extras/amd.js"></script>
+<script src="extras/named-exports.js"></script>
+<script src="extras/named-register.js"></script>
+<script src="extras/transform.js"></script>
+<script src="extras/global.js"></script> -->
+<script src="public/assets/app.js"></script>
+
 </head>
 <body>
     <div id='liam'></div>
     <div id='ellie'></div>
+    <div id='app'></div>
     <script>
-        console.log(System.import('http://localhost:8080/iife.js'));
-        var revealing = System.import('http://localhost:8080/revealing.js')
-        console.log("REVEALING: ", revealing.(function(val){return val}));
+        // console.log(System.import('http://localhost:8080/iife.js'));
+        
+
+        // System.import('http://localhost:8080/revealing.js').then(function(val){
+        //     console.log("REVEALING: ", val.default.sayHello())});
+        
+        // System.import('http://localhost:8080/amd.js').then(function(val){
+        //     console.log("AMD: ", val.default.amd)})
+
+        // System.import('http://localhost:8000/runtime.d8cab7e8468a3b672191.js')
+        // System.import('http://localhost:8000/vendors.d8cab7e8468a3b672191.js')
+        
+        // **********************************************
+        // let state;
+        // System.import('http://localhost:8000/app.639ae07219d585ba7d2e.js').then(function(val){
+        //     console.log("REACT APP: ", val.default());
+        //     state = val.default;
+        // })
+
+        // **********************************************
+        
+        // This is commonJS so it shouldn't work in the browser
+        //System.import('http://localhost:8080/cjs.js')
+        // .then(function(val){
+        //     console.log("CJS: ", val.default)
+        // })
+        
     </script>
 </body>
 </html>
